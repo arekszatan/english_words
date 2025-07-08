@@ -53,17 +53,17 @@ class Application:
 
             if random_number == 0:
                 if answer == random_pair[1]:
-                    print("Correct!")
+                    print("\t\t\tCorrect!")
                     self.score += 1
                 else:
-                    print("Wrong answer!")
+                    print(f"\t\t\tWrong answer!>> {random_pair[1]} <<")
 
             if random_number == 1:
                 if answer == random_pair[0]:
-                    print("Correct!")
+                    print("\t\t\tCorrect!")
                     self.score += 1
                 else:
-                    print("Wrong answer!")
+                    print(f"\t\t\tWrong answer!>> {random_pair[0]} <<")
 
             print(f"Your score is now {self.score}/{self.attempts}")
             if answer == "exit":
