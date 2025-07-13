@@ -38,9 +38,9 @@ class Application:
         while self.running:
             if not self.words_data:
                 ans = input("Words list is empty (reset, exit)->")
-                if ans == 'reset':
+                if ans == 'RESET':
                     self.restart()
-                if ans == 'exit' or not ans:
+                if ans == 'EXIT' or not ans:
                     self.running = False
                     break
             random_number = random.randint(0, len(self.words_data) - 1)
@@ -66,10 +66,10 @@ class Application:
                     print(f"\t\t\tWrong answer!>> {random_pair[0]} <<")
 
             print(f"Your score is now {self.score}/{self.attempts}")
-            if answer == "exit":
+            if answer == "EXIT":
                 self.running = False
 
-            if answer == "reset":
+            if answer == "RESET":
                 self.restart()
 
 
